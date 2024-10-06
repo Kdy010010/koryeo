@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고려연방사령부정보사령부</title>
+    <style>
+        h1 {
+            font-family: '궁서', serif;
+            text-align: center;
+        }
+        .password-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .password-container input {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            const password = document.getElementById("password").value;
+            if (password === "탈모인간") {
+                window.location.href = "a.html";
+            } else {
+                alert("비밀번호가 틀렸습니다.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>고려연방사령부정보사령부</h1>
+    <div class="password-container">
+        <input type="password" id="password" placeholder="비밀번호 입력">
+        <button onclick="checkPassword()">확인</button>
+    </div>
+</body>
+</html>
